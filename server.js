@@ -44,12 +44,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // init middleware. Allows req to not return undefined
 app.use(express.json({ extended: false }));
 
-// shows logs of user activity in terminal.
+// shows logs of CRUD requests in terminal.
 app.use(morgan("dev"));
 
 // cookie parser
 app.use(cookieParser());
 
+// middleware
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -60,7 +61,14 @@ app.use(function (req, res, next) {
 });
 
 // access routes
-// app.use("/", require("./routes/homepage"));
+app.use("/about", require("./routes/about"));
+app.use("/citizenship", require("./routes/citizenship"));
+app.use("/consultation", require("./routes/consultation"));
+app.use("/contact", require("./routes/contact"));
+app.use("/deportation", require("./routes/deportation"));
+// app.use("/error", require("./routes/error"));
+app.use("/green-cards", require("./routes/green-cards"));
+app.use("/work-permit", require("./routes/work-permit"));
 
 // heroku
 if (process.env.NODE_ENV === "production") {
@@ -70,6 +78,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+// has to be after 'access routes' to work
 app.use(errorHandler);
 
 app.get("/", (req, res) => res.send("API Running"));
