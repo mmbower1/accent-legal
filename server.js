@@ -1,6 +1,6 @@
 const express = require("express"); // express
 const app = express();
-// Allow cross-origin.....
+// Allow cross-origin
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
@@ -60,10 +60,7 @@ app.use(function (req, res, next) {
 });
 
 // access routes
-app.use("/login", require("./routes/homepage"));
-// app.use('/register', require('./routes/register'));
-// app.use('/profile', require('./routes/profile'));
-// app.use('/stripe', require('./routes/stripe'));
+// app.use("/", require("./routes/homepage"));
 
 // heroku
 if (process.env.NODE_ENV === "production") {
