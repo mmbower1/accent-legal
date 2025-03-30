@@ -61,28 +61,28 @@ app.use(function (req, res, next) {
 });
 
 // access routes
-app.use("/about", require("./routes/about"));
-app.use("/citizenship", require("./routes/citizenship"));
-app.use("/consultation", require("./routes/consultation"));
+// app.use("/about", require("./routes/about"));
+// app.use("/citizenship", require("./routes/citizenship"));
+// app.use("/consultation", require("./routes/consultation"));
 app.use("/contact", require("./routes/contact"));
-app.use("/deportation", require("./routes/deportation"));
-// app.use("/error", require("./routes/error"));
-app.use("/green-cards", require("./routes/green-cards"));
-app.use("/work-permit", require("./routes/work-permit"));
+// app.use("/deportation", require("./routes/deportation"));
+// // app.use("/error", require("./routes/error"));
+// app.use("/green-cards", require("./routes/green-cards"));
+// app.use("/work-permit", require("./routes/work-permit"));
 //
 
 // heroku
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+//   app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+//   });
+// }
 
 // has to be after 'access routes' to work
 app.use(errorHandler);
 
-app.get("/", (req, res) => res.send("API Running"));
+// app.get("/", (req, res) => res.send("API Running"));
 
 app.listen(PORT, () =>
   console.log(`>>> accent legal Server started on port ${PORT}`.brightBlue.bold)
