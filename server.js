@@ -82,7 +82,7 @@ app.use("/contact", require("./routes/contact"));
 // has to be after 'access routes' to work
 app.use(errorHandler);
 
-// app.get("/", (req, res) => res.send("API Running"));
+app.get("/", (req, res) => res.send("API Running"));
 
 app.listen(PORT, () =>
   console.log(`>>> accent legal Server started on port ${PORT}`.brightBlue.bold)
