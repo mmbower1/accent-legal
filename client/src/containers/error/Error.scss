@@ -1,0 +1,21 @@
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  img {
+    width: 90vw;
+    max-width: 600px;
+    display: block;
+    margin-bottom: 2rem;
+    margin-bottom: -3rem;
+  }
+
+  a {
+    margin-top: 20px;
+    margin-left: 10px;
+    text-transform: capitalize;
+  }
+}

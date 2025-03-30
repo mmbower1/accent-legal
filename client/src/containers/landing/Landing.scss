@@ -1,0 +1,191 @@
+.cards-antd {
+  background-color: var(--mainColor);
+  color: white;
+  cursor: default;
+  display: flex;
+  margin-top: 100px;
+  height: 200px;
+}
+
+.landing {
+  position: relative;
+  background: url("../../images/landing.jpg") no-repeat center center/cover;
+  height: 150vh;
+
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .landing-inner {
+      animation: 1.5s fadeInUp;
+      color: #fff;
+      margin-top: 2rem;
+
+      .landing-title {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      #landing-title2 {
+        line-height: 3rem;
+        text-align: center;
+      }
+
+      .landing-description {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        .lead {
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          font-size: 1.7rem;
+          margin: 10px;
+          padding: 20px;
+          width: 45%;
+          min-width: 300px;
+        }
+
+        li {
+          font-size: 1.4rem;
+        }
+      }
+
+      .options-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        .lead {
+          background-color: rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+          font-size: 1.7rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin: -10px 0 0 -10px;
+          padding: 20px;
+          width: 33%;
+          text-align: center;
+
+          // .payment {
+          //   margin-bottom: 25;
+          // }
+
+          span {
+            font-size: 20px;
+          }
+
+          h5 {
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.x-large {
+  font-size: 3rem;
+  margin-left: 30px;
+  // line-height: 1.2;
+  // margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1440px) {
+  .landing {
+    height: 175vh;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .options-container {
+    font-size: 0.5rem;
+
+    .lead {
+      font-size: 0.5rem;
+    }
+  }
+
+  .landing-inner {
+    // margin-top: 12rem;
+  }
+
+  .x-large {
+    // font-size: 3.4rem;
+    // width: 150%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .landing {
+    height: 200vh;
+
+    .dark-overlay .landing-inner .landing-description .lead {
+      font-size: 1.1rem;
+      text-align: center;
+      width: 95%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landing-description {
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
+  .options-container {
+    h5 {
+      font-size: 1.1rem;
+    }
+
+    .lead span {
+      font-size: 1rem;
+    }
+  }
+
+  .payment-button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .landing {
+    height: 225vh;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  .x-large {
+    font-size: 2rem;
+  }
+
+  #landing-title2 {
+    line-height: 2rem;
+  }
+
+  .landing-description {
+    .lead {
+      // width: 90%;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

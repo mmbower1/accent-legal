@@ -1,0 +1,9 @@
+export { default as About } from "./about/About";
+export { default as Citizenship } from "./citizenship/Citizenship";
+export { default as Error } from "./error/Error";
+export { default as Consultation } from "./consultation/Consultation";
+export { default as Contact } from "./contact/Contact";
+export { default as Deportation } from "./deportation/Deportation";
+export { default as GreenCards } from "./greenCards/GreenCards";
+export { default as Landing } from "./landing/Landing";
+export { default as WorkPermit } from "./workPermit/WorkPermit";

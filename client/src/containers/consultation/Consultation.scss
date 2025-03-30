@@ -1,0 +1,136 @@
+.consultation-container {
+  margin-top: 30px;
+  height: 100vh;
+
+  .consultation-title {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .consultation-form-container {
+    display: flex;
+    gap: 5rem;
+    margin: 2rem 150px 0 150px;
+    justify-content: space-between;
+    position: relative;
+
+    ::after {
+      background-color: lightgray;
+      content: "";
+      height: 50%;
+      left: 50%;
+      // position: absolute;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+    }
+
+    .consultation-form {
+      text-align: center;
+      width: 100%;
+
+      .form-group {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+    }
+
+    .right {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .left {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .checkboxes-weekday {
+      display: inline-flex;
+
+      .monday,
+      .tuesday,
+      .wednesday,
+      .thursday,
+      .friday {
+        width: 35px;
+        height: 15px;
+        transform: scale(1.5); /* Adjust the scale as needed */
+        -webkit-transform: scale(1.5); /* For Safari */
+        -moz-transform: scale(1.5); /* For Firefox */
+        -ms-transform: scale(1.5); /* For Internet Explorer */
+        -o-transform: scale(1.5); /* For Opera */
+      }
+    }
+
+    .checkboxes-timeOfDay {
+      display: inline-flex;
+
+      .morning,
+      .afternoon,
+      .evening,
+      .uscis {
+        width: 35px;
+        height: 15px;
+        transform: scale(1.5); /* Adjust the scale as needed */
+        -webkit-transform: scale(1.5); /* For Safari */
+        -moz-transform: scale(1.5); /* For Firefox */
+        -ms-transform: scale(1.5); /* For Internet Explorer */
+        -o-transform: scale(1.5); /* For Opera */
+      }
+    }
+
+    .uscis {
+      width: 15px;
+      height: 15px;
+      transform: scale(1.5); /* Adjust the scale as needed */
+      -webkit-transform: scale(1.5); /* For Safari */
+      -moz-transform: scale(1.5); /* For Firefox */
+      -ms-transform: scale(1.5); /* For Internet Explorer */
+      -o-transform: scale(1.5); /* For Opera */
+    }
+  }
+}
+
+.consultation-title {
+  text-decoration: underline;
+}
+
+.map-container {
+  background: url("../../images/office-location-map.png") no-repeat center /
+    cover;
+  min-height: 400px;
+  position: relative;
+}
+
+.map-card {
+  background-color: gray;
+  position: absolute;
+  bottom: 1%;
+  border-radius: 12px;
+  right: 64%;
+  max-width: 300px;
+  padding: 1rem;
+  width: 100%;
+
+  &-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 1073px) {
+  .consultation-container {
+    flex-direction: column;
+
+    ::after {
+      display: none;
+    }
+  }
+
+  .left,
+  .right {
+    max-width: 100%;
+  }
+}

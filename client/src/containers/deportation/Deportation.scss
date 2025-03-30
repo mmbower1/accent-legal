@@ -1,0 +1,51 @@
+.top-deportation {
+  background: url("../../images/deportation.jpg") no-repeat center center/cover;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+}
+
+.deportation-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  height: 100%;
+
+  h2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-left: 10px;
+    margin: 0 20px 0 20px;
+  }
+
+  h1,
+  h2 {
+    margin-left: 20px;
+  }
+}
+
+.deportation-title {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.deportation-bottom {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+}
+
+.title {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 1000px) {
+  .top-deportation,
+  .deportation-bottom {
+    // margin-left: 2.5rem;
+    // margin-right: 2.5rem;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

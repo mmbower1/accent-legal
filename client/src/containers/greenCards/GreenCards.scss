@@ -1,0 +1,84 @@
+.top-green-card {
+  background: url("../../images/green-card.jpg") no-repeat center center/cover;
+  position: relative;
+  // padding-bottom: 30px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+}
+
+.green-card-bottom {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+  // margin-left: 3rem;
+  // margin-right: 3rem;
+}
+
+.greenCard-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  // margin-top: 30px;
+  height: 100%;
+
+  h2 {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+  h1,
+  h2,
+  li {
+    margin: 0 20px 0 20px;
+  }
+  a {
+    color: #eee;
+    // text-decoration: none;
+  }
+  a:visited {
+    color: #eee;
+    // text-decoration: none;
+  }
+  a:hover {
+    color: #eee;
+    // text-decoration: none;
+  }
+  a:focus {
+    color: #eee;
+    // text-decoration: none;
+  }
+}
+
+.greenCard-title {
+  text-decoration: underline;
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.collapse .ant-collapse-header {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.collapse .ant-collapse-content {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .top-green-card,
+  // .green-card-bottom {
+  //   margin-left: 2.5rem;
+  //   margin-right: 2.5rem;
+  // }
+
+  h2 {
+    font-size: 20px;
+  }
+}

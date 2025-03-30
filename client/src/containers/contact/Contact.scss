@@ -1,0 +1,123 @@
+.contact-container {
+  margin-top: 30px;
+  height: 100%;
+
+  .contact-title {
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .contact-form-container {
+    display: flex;
+    gap: 5rem;
+    margin: 2rem 50px 0 50px;
+    justify-content: space-between;
+    position: relative;
+
+    ::after {
+      background-color: lightgray;
+      content: "";
+      height: 50%;
+      left: 50%;
+      position: absolute;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+    }
+  }
+
+  .contact-form {
+    text-align: center;
+    width: 100%;
+
+    .form-group {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
+
+  .contact-bottom {
+    margin-left: 30px;
+  }
+
+  .right,
+  .left {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .left-section {
+    background-color: lightgray;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+  }
+
+  .map-container {
+    background: url("../../images/office-location-map.png") no-repeat center /
+      cover;
+    min-height: 400px;
+    position: relative;
+  }
+
+  .map-card {
+    background-color: gray;
+    position: absolute;
+    bottom: 1%;
+    border-radius: 12px;
+    right: 64%;
+    max-width: 300px;
+    padding: 1rem;
+    width: 100%;
+
+    &-link {
+      display: inline-block;
+      font-size: 1.3rem;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 1073px) {
+  .contact-container .contact-form-container {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+    ::after {
+      display: none;
+    }
+  }
+
+  .left,
+  .right {
+    margin: 0;
+  }
+
+  .map-card {
+    background-position: 80% center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  // .map-card {
+  //   // font-size: 13px;
+  //   // max-width: 100%;
+  //   // // right: auto;
+  // }
+
+  .form-group,
+  input,
+  textarea {
+    font-size: 15px;
+  }
+
+  .contact-container .left-section {
+    font-size: 15px;
+  }
+}
