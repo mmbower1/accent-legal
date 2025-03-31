@@ -29,6 +29,7 @@ const Landing = () => {
               {t("landing.landing-greeting")}
             </h2>
             <br />
+            <div className="photo-container"></div>
             <br />
             <div className="landing-description">
               <h2 className="lead">
@@ -54,13 +55,11 @@ const Landing = () => {
                 staff.
               </h2>
             </div>
-            <br />
-            <br />
+
             <br />
             <Button />
             <br />
-            <br />
-            <br />
+
             <br />
             <div className="options-container">
               <div className="lead">
@@ -112,6 +111,7 @@ const Landing = () => {
           </div>
         </div>
       </section>
+
       <Footer />
       {/* <Outlet /> */}
     </>

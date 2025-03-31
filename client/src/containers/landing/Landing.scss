@@ -35,6 +35,15 @@
         text-align: center;
       }
 
+      .photo-container {
+        background: url("../../images/World-Peace.jpg") no-repeat center
+          center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25rem 0 0 40px;
+      }
+
       .landing-description {
         display: flex;
         flex-wrap: wrap;
