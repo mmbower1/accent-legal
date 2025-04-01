@@ -11,7 +11,7 @@ const Button = () => {
     <div className="button-container">
       <ImArrowRight />
       &nbsp;&nbsp;Have problems but can’t consult anyone? &nbsp;&nbsp;
-      <div className="buttons">
+      <div>
         <Link to="/consultation" className="btn btn-primary">
           {t("landing.free-consultation")}
         </Link>

@@ -9,7 +9,8 @@ const FinalMessage = () => {
         <FaStar style={{ color: "#FFD700" }} />
         &nbsp; Reaching the stars for our clients. All immigration applications
         are discretionary, have professionals on your side.
-      </span>
+      </span>{" "}
+      <br />
       <button className="payment-button">
         <a href="https://secure.lawpay.com/pages/kowalewski-law-corporation/trust">
           Make Payment

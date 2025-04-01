@@ -25,9 +25,13 @@ const Landing = () => {
         <div className="dark-overlay">
           <div className="landing-inner">
             <h1 className="x-large landing-title">Accent Légal</h1>
+            <br />
+            <br />
             <h2 id="landing-title2" className="x-large ">
               {t("landing.landing-greeting")}
             </h2>
+            <br />
+            <br />
             <br />
             <div className="photo-container"></div>
             <br />
